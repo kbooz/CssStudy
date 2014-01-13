@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Captação Digital Video</title>
+	<style type="text/css">
+
+/*
+*	Portfolio
+*/
+
+
+div.outer
+{
+	background-color: black;
+	position: relative;
+	overflow: hidden;
+}
+
+.inside{
+	position: absolute;
+	opacity: 0;
+	margin: 0;
+	padding: 0;
+}
+
+.image,.image2,div.outer{
+	height: 150px;
+	width: 150px;
+}
+
+.image{
+	opacity: 1;
+}
+
+.image2{
+	z-index: 0;
+}
+
+.text{
+	bottom: 0;
+	color: white;
+	z-index: 1;
+}
+
+div.outer:hover .inside{
+	opacity: 1;
+}
+
+div.outer:hover .image{
+	opacity: 0;
+}
+
+.animado{
+	transition: all .3s linear;
+}
+	</style>
+
+</head>
+<body>
+
+<div class="outer">
+	<div class="inside image animado"><img class="animado" src="http://4.bp.blogspot.com/-TtEccl_p_Ls/USI6YLUqrcI/AAAAAAAAFKA/5a1ciV5rKH4/s400/mop.jpg"></div>
+	<p class="inside text animado">Trabalho</p>
+	<div class="inside image2 animado"><img class="animado" src="http://wow.stratics.com/wp-content/uploads/2012/08/1017.jpg"></div>
+</div>
+
+</body>
+</html>
